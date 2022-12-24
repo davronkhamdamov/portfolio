@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           <p className={c.heroDes}>I'm Frontend Web Developer</p>
         </div>
         <div>
-          <img src={mainImg} alt="" />
+          <img className={c.heroBg} src={mainImg} alt="" />
         </div>
       </div>
     </main>

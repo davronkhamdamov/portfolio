@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import MobileSidebar from '../MobileSidebar/MobileSidebar';
 import logo from '../../assets/Images/headerLogo.png';
+import { RiMenu4Fill } from 'react-icons/ri';
 
 const Header: React.FC = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
@@ -29,7 +30,7 @@ const Header: React.FC = () => {
             </li>
           </ul>
           <div onClick={() => setIsSideBarOpen(true)} className={c.mobileMenu}>
-            <p>=</p>
+            <RiMenu4Fill />
           </div>
         </nav>
       </header>

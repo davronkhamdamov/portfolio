@@ -1,25 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
 .hero {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     min-height: 70vh;
+    flex-wrap: wrap-reverse;
 }
 
 .heroTitle {
-    font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     color: rgb(0, 255, 255);
-    line-height: 60px;
 }
 
 .heroText {
     font-size: 30px;
     color: #ccc;
-    line-height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
 }
 
 .heroDes {
+    font-family: 'Ubuntu', sans-serif;
     color: #a2a2a2;
+    font-weight: 300;
+}
+
+@media (max-width:750px) {
+    .heroBg {
+        width: 50vw;
+        justify-content: space-between;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+    }
+
+    .heroText {
+        font-size: 25px;
+    }
+}
+
+.hero .heroTitle,
+.hero .heroText,
+.hero .heroDes,
+.hero .heroBg {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: bottom 0.8s forwards;
+    animation-delay: 0.4s;
+}
+
+.hero .heroDes {
+    animation-delay: 0.8s;
+}
+
+.hero .heroText {
+    animation-delay: 0.7s;
+}
+
+.hero .heroBg {
+    animation-delay: 0.6s;
+}
+
+@keyframes bottom {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
