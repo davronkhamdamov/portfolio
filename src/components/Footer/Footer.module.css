@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.footerText {
+    width: 100%;
+    color: #d4d2d2e0;
+    text-align: center;
+}
+
+@media (max-width:600px) {
+    .footerText {
+        font-size: 14px;
+    }
+}

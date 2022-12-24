@@ -1,0 +1,81 @@
+.sidebar {
+    width: 400px;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    right: -100%;
+    transition: 0.3s ease-out;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.closeSymbol {
+    font-size: 30px;
+    color: #f2f2f2;
+    position: absolute;
+    left: 10%;
+    top: 4%;
+    transform: rotate(45deg);
+    user-select: none;
+}
+
+.closeSymbol:hover {
+    font-weight: 900;
+    color: white;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+.list {
+    width: 100%;
+    height: 300px;
+    color: #f2f2f2;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 25%;
+}
+
+.list a {
+    color: #f2f2f2;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display: block;
+}
+
+.sidebar.active .list a {
+    animation: bottom 0.5s forwards linear;
+    transform: translateY(10px);
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+@keyframes bottom {
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+}

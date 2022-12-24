@@ -1,0 +1,22 @@
+.notFoundWrapp {
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #f3f3f3;
+    line-height: 80px;
+}
+
+.notFound {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    color: #f1f1f1;
+}

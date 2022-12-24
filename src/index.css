@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url(./assets/Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wrapp {
+    height: 100vh;
+    overflow: scroll;
+    padding-bottom: 40px;
+}
+
+.wrapp::-webkit-scrollbar {
+    width: 6px;
+    background: #000;
+}
+
+.wrapp::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+}
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 20px 50px;
+}

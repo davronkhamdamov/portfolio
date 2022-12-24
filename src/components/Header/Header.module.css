@@ -1,0 +1,96 @@
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logoWrapper {
+    transition: transform 0.4s ease-in-out;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.logoWrapper:hover {
+    transform: rotate(360deg) scale(0.91);
+
+}
+
+nav {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+}
+
+.navList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navList li {
+    list-style-type: none;
+}
+
+.navList li a {
+    border-bottom: 3px solid transparent;
+    border-radius: 20px;
+    padding: 10px 1vw;
+    transition: 0.4s linear;
+    text-decoration: none;
+    color: #eee;
+    font-size: 1fr;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navList li a:hover {
+    border-bottom: 3px solid rgba(0, 255, 255, 0.5);
+}
+
+.navList li a:active {
+    color: #333;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+@media (max-width:1100px) {
+    nav {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:800px) {
+    .logoWrapper {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logoWrapper img {
+        width: 50px;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    .navList {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: block;
+        color: red;
+        font-size: 30px;
+    }
+}
