@@ -1,11 +1,14 @@
 import React from 'react';
 import c from './MobileSidebar.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import navbardata from '../../json/navbardata.json';
+import { active } from '../../utils';
 interface bool {
   setIsSideBarOpen: Function;
   isSideBarOpen: boolean;
 }
 const MobileSidebar: React.FC<bool> = ({ setIsSideBarOpen, isSideBarOpen }) => {
+  const { pathname } = useLocation();
   return (
     <>
       <div className={`${c.sidebar} ${isSideBarOpen ? c.active : ''}`}>
@@ -13,18 +16,25 @@ const MobileSidebar: React.FC<bool> = ({ setIsSideBarOpen, isSideBarOpen }) => {
           <p className={c.closeSymbol}>+</p>
         </div>
         <ul onClick={() => setIsSideBarOpen(false)} className={c.list}>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/work">Work</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          {navbardata.map((el, i) => {
+            return (
+              <li>
+                <Link
+                  style={{
+                    color: `${active(
+                      pathname,
+                      el.link,
+                      'rgb(0,255,255)',
+                      '#fff'
+                    )}`,
+                  }}
+                  to={el.link}
+                >
+                  {el.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div
