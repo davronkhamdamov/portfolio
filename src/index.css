@@ -14,7 +14,7 @@ body {
 
 .wrapp {
     height: 100vh;
-    overflow: scroll;
+    overflow: auto;
     padding-bottom: 40px;
 }
 
