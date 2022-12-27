@@ -95,3 +95,28 @@
 .mail:hover .link {
     display: flex;
 }
+
+@media (max-width:558px) {
+    .SocialMedia {
+        width: 25px;
+        height: 150px;
+        padding-top: 8px;
+        padding-left: 3px;
+    }
+
+    .telegramIcon,
+    .linkedinIcon,
+    .GithubIcon,
+    .mailIcon {
+        width: 15px;
+        margin-bottom: 1px;
+    }
+
+    .telegram:hover .link,
+    .telegram:hover .link,
+    .github:hover .link,
+    .linkedin:hover .link,
+    .mail:hover .link {
+        display: none;
+    }
+}

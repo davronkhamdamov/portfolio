@@ -8,6 +8,7 @@
     justify-content: space-evenly;
     min-height: 70vh;
     flex-wrap: wrap-reverse;
+    padding-bottom: 50px;
 }
 
 .heroTitle {
@@ -31,20 +32,6 @@
     font-weight: 300;
 }
 
-@media (max-width:850px) {
-    .heroBg {
-        width: 50vw;
-        justify-content: space-between;
-    }
-
-    .heroTitle {
-        font-size: 40px;
-    }
-
-    .heroText {
-        font-size: 25px;
-    }
-}
 
 .hero .heroTitle,
 .hero .heroText,
@@ -97,4 +84,43 @@
         transform: translateY(0);
     }
 
+}
+
+@media (max-width:850px) {
+    .heroBg {
+        width: 50vw;
+        justify-content: space-between;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+    }
+
+    .heroText {
+        font-size: 25px;
+    }
+
+    .downloadCV {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:316px) {
+    .hero {
+        align-content: center;
+    }
+
+    .heroTitle {
+        font-size: 30px;
+    }
+
+    .heroText {
+        font-size: 20px;
+    }
+
+    .downloadCV {
+        padding: 4px 7px;
+        font-size: 10px;
+    }
 }

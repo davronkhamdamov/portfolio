@@ -20,11 +20,11 @@ const Work: React.FC = () => {
             <Link to="/">More</Link>
           </div>
         </div>
-        <span className={c.workData}>11.12.2022</span>
+        <span className={c.workDate}>11.12.2022</span>
       </div>
       <div className={c.workItem}>
         <img src={amazon} alt="" />
-        <span className={c.workData}>01.12.2022</span>
+        <span className={c.workDate}>01.12.2022</span>
         <h2>Texnomart Clone</h2>
         <div className={c.des}>
           <p>
