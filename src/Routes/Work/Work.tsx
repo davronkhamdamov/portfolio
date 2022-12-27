@@ -1,6 +1,7 @@
 import React from 'react';
 import c from './Work.module.css';
-import amazon from '../../assets/Images/amazon.jpg';
+import amazon from '../../assets/Images/amazon.png';
+import texnomart from '../../assets/Images/texnomart.png';
 import { Link } from 'react-router-dom';
 const Work: React.FC = () => {
   return (
@@ -16,14 +17,16 @@ const Work: React.FC = () => {
             quam veniam.
           </p>
           <div className={c.btnGroup}>
-            <Link to="/">Show Clone</Link>
+            <a target="_blank" href="https://amazon-steel-nu.vercel.app/">
+              Show Clone
+            </a>
             <Link to="/">More</Link>
           </div>
         </div>
         <span className={c.workDate}>11.12.2022</span>
       </div>
       <div className={c.workItem}>
-        <img src={amazon} alt="" />
+        <img src={texnomart} alt="" />
         <span className={c.workDate}>01.12.2022</span>
         <h2>Texnomart Clone</h2>
         <div className={c.des}>
@@ -34,7 +37,9 @@ const Work: React.FC = () => {
             quam veniam.
           </p>
           <div className={c.btnGroup}>
-            <Link to="/">Show Clone</Link>
+            <a target="_blank" href="https://texnomart-zeta.vercel.app/">
+              Show Clone
+            </a>
             <Link to="/">More</Link>
           </div>
         </div>
