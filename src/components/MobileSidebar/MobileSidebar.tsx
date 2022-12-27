@@ -3,6 +3,8 @@ import c from './MobileSidebar.module.css';
 import { Link, useLocation } from 'react-router-dom';
 import navbardata from '../../json/navbardata.json';
 import { active } from '../../utils';
+import { v4 as uuidv4 } from 'uuid';
+
 interface bool {
   setIsSideBarOpen: Function;
   isSideBarOpen: boolean;
@@ -18,7 +20,7 @@ const MobileSidebar: React.FC<bool> = ({ setIsSideBarOpen, isSideBarOpen }) => {
         <ul onClick={() => setIsSideBarOpen(false)} className={c.list}>
           {navbardata.map((el, i) => {
             return (
-              <li>
+              <li key={uuidv4()}>
                 <Link
                   style={{
                     color: `${active(

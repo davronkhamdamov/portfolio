@@ -6,6 +6,7 @@ import logo from '../../assets/Images/headerLogo.png';
 import { RiMenu4Fill } from 'react-icons/ri';
 import navbardata from '../../json/navbardata.json';
 import { active } from '../../utils';
+import { v4 as uuidv4 } from 'uuid';
 const Header: React.FC = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
 
@@ -19,9 +20,9 @@ const Header: React.FC = () => {
         </Link>
         <nav>
           <ul className={c.navList}>
-            {navbardata.map((el, i) => {
+            {navbardata.map((el) => {
               return (
-                <li key={i}>
+                <li key={uuidv4()}>
                   <Link
                     style={{
                       color: `${active(

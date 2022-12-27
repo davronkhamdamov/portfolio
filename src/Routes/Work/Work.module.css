@@ -107,7 +107,7 @@
 }
 
 .workItem:hover h2 {
-    transform: translateY(-140px);
+    transform: translateY(-80px);
 }
 
 .workItem:hover img {
@@ -154,7 +154,7 @@
 
 @media (max-width:456px) {
     .workItem:hover h2 {
-        transform: translateY(-160px);
+        transform: translateY(-60px);
     }
 }
 
@@ -174,7 +174,7 @@
     }
 
     .workItem:hover h2 {
-        transform: translateY(-140px);
+        transform: translateY(-50px);
     }
 }
 
@@ -194,6 +194,6 @@
     }
 
     .workItem:hover h2 {
-        transform: translateY(-80px);
+        transform: translateY(-50px);
     }
 }

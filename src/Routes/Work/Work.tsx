@@ -3,6 +3,7 @@ import c from './Work.module.css';
 import amazon from '../../assets/Images/amazon.png';
 import texnomart from '../../assets/Images/texnomart.png';
 import { Link } from 'react-router-dom';
+
 const Work: React.FC = () => {
   return (
     <div className={c.workWrapper}>
@@ -10,12 +11,7 @@ const Work: React.FC = () => {
         <img src={amazon} alt="" />
         <h2>Amazon Clone</h2>
         <div className={c.des}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            molestias quos facilis doloremque labore asperiores velit tempora
-            sapiente, inventore, delectus voluptatem ipsam libero perspiciatis
-            quam veniam.
-          </p>
+          <p>Used libraries: react, redux, firebase, react router dom</p>
           <div className={c.btnGroup}>
             <a target="_blank" href="https://amazon-steel-nu.vercel.app/">
               Show Clone
@@ -31,10 +27,8 @@ const Work: React.FC = () => {
         <h2>Texnomart Clone</h2>
         <div className={c.des}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            molestias quos facilis doloremque labore asperiores velit tempora
-            sapiente, inventore, delectus voluptatem ipsam libero perspiciatis
-            quam veniam.
+            Used libraries: React, Redux, Firebase, React Router Dom, I18next,
+            Swiper
           </p>
           <div className={c.btnGroup}>
             <a target="_blank" href="https://texnomart-zeta.vercel.app/">
