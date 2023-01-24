@@ -1,7 +1,7 @@
-import React from 'react';
-import c from './Home.module.css';
-import mainImg from '../../assets/Images/heroBg.png';
-import resume from '../../files/Frontend Web Developer Freelancer Resume.pdf';
+import React from 'react'
+import c from './Home.module.css'
+import mainImg from '../../assets/Images/heroBg.png'
+import resume from '../../files/FrontendWebDeveloperFreelancerResume.pdf'
 const Home: React.FC = () => {
   return (
     <main>
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
         </div>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

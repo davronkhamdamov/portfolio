@@ -1,8 +1,8 @@
-import React from 'react';
-import c from './Work.module.css';
-import amazon from '../../assets/Images/amazon.png';
-import texnomart from '../../assets/Images/texnomart.png';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import c from './Work.module.css'
+import amazon from '../../assets/Images/amazon.png'
+import texnomart from '../../assets/Images/texnomart.png'
+import { Link } from 'react-router-dom'
 
 const Work: React.FC = () => {
   return (
@@ -16,7 +16,6 @@ const Work: React.FC = () => {
             <a target="_blank" href="https://amazon-steel-nu.vercel.app/">
               Show Clone
             </a>
-            <Link to="/">More</Link>
           </div>
         </div>
         <span className={c.workDate}>11.12.2022</span>
@@ -34,12 +33,11 @@ const Work: React.FC = () => {
             <a target="_blank" href="https://texnomart-zeta.vercel.app/">
               Show Clone
             </a>
-            <Link to="/">More</Link>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work
