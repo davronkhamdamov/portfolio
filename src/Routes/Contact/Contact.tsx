@@ -1,5 +1,5 @@
-import React from 'react'
-import c from './Contact.module.css'
+import React from "react";
+import c from "./Contact.module.css";
 const Contact: React.FC = () => {
   return (
     <div className={c.contactHero}>
@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
