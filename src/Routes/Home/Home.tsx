@@ -10,7 +10,7 @@ const Home: React.FC = () => {
           <h1 className={c.heroTitle}>HI</h1>
           <h2 className={c.heroText}>My name is Davron</h2>
           <p className={c.heroDes}>I'm Frontend Web Developer</p>
-          <a href={resume} target="_blank" className={c.downloadCV}>
+          <a href={resume} target="_blank" className={c.downloadCV} download={resume}>
             Download My CV
           </a>
         </div>
