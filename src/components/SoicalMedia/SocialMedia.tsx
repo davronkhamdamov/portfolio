@@ -38,7 +38,7 @@ const SocialMedia: React.FC = () => {
         </div>
       </a>
       <a
-        href="mailto:xamdamovdavron6@gmail.com"
+        href="mailto:support@betwixt.uz"
         target="_blank"
         className={c.mail}
       >
