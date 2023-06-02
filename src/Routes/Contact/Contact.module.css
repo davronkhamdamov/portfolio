@@ -1,1 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+.contactHero {
+  width: 100%;
+  min-height: 70dvh;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.title {
+  color: whitesmoke;
+}
+.formWrap form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.formWrap form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+.formWrap form textarea {
+  width: 100%;
+  min-width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+.formWrap form button {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgb(0, 255, 295);
+  color: #333;
+  border: none;
+}

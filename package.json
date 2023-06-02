@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "nodemailer": "^6.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.1",
     "react-icons": "^4.7.1",
     "react-lazy-load-image-component": "^1.5.6",
     "react-loader-spinner": "^5.3.4",
-    "react-router-dom": "^6.6.0",
+    "react-router-dom": "^6.11.2",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
