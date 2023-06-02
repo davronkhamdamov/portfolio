@@ -1,7 +1,7 @@
 import React from 'react'
 import c from './Home.module.css'
 import mainImg from '../../assets/Images/heroBg.png'
-import resume from '../../files/Frontend.pdf'
+import resume from '../../files/FullStackCV.pdf'
 const Home: React.FC = () => {
   return (
     <main>
