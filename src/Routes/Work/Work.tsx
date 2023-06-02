@@ -1,6 +1,5 @@
 import React from "react";
 import c from "./Work.module.css";
-import amazon from "../../assets/Images/amazon.png";
 import texnomart from "../../assets/Images/texnomart.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -35,7 +34,11 @@ const Work: React.FC = () => {
       </div>
       <div className={c.workItem}>
         <div className={c.img}>
-          <LazyLoadImage effect="blur" src={texnomart} alt="" />
+          <LazyLoadImage
+            effect="blur"
+            src="https://res.cloudinary.com/didddubfm/image/upload/v1685713612/texnomart_sfymky.png"
+            alt=""
+          />
         </div>
         <span className={c.workDate}>01.12.2022</span>
         <h2>Texnomart Clone</h2>
