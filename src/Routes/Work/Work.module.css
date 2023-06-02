@@ -29,10 +29,6 @@
   cursor: pointer;
 }
 
-.workItem + .workItem {
-  animation-delay: 0.5s;
-}
-
 @keyframes bottom {
   to {
     opacity: 1;
@@ -41,7 +37,7 @@
 }
 
 .workItem::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -63,10 +59,11 @@
 .workItem img {
   width: 100%;
   object-fit: contain;
+}
+.workItem .img {
   transition: 0.5s;
   transform-origin: top;
 }
-
 .workDate {
   width: max-content;
   position: absolute;
@@ -105,10 +102,10 @@
 }
 
 .workItem:hover h2 {
-  transform: translateY(-80px);
+  transform: translateY(-100px);
 }
 
-.workItem:hover img {
+.workItem:hover .img {
   transform: scale(0.89);
 }
 
@@ -121,10 +118,11 @@
   display: flex;
   justify-content: space-around;
   margin-top: 15px;
+  gap: 10px;
 }
 
 .btnGroup a {
-  width: 100%;
+  width: 40%;
   height: 30px;
   border-radius: 20px;
   background: transparent;
