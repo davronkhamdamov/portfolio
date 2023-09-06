@@ -28,7 +28,7 @@ const SocialMedia: React.FC = () => {
         </div>
       </a>
       <a
-        href="https://www.linkedin.com/in/davron-xamdamov-b1a766248/"
+        href="https://www.linkedin.com/in/davron-xamdamov-51593a28b"
         target="_blank"
         className={c.linkedin}
       >
